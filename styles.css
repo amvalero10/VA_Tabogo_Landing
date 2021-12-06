@@ -1,0 +1,31 @@
+#vs1{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    display: flex;
+}
+
+
+#msIntro{
+    position:  relative;
+    width: 74%;
+    left: 12%;
+}
+
+
+#ms1{
+    position:  relative;
+    width: 80%;
+    left: 9%;
+}
+
+
+.card{
+    position: relative;
+    width: 92.5%;
+    /* height: 100%; */
+
+    left: 4%;
+    /* right: 20%; */
+ 
+}
