@@ -29,3 +29,10 @@
     /* right: 20%; */
  
 }
+
+
+#table{
+    position:  relative;
+    width: 50%;
+    left: 25%;
+}

@@ -34,7 +34,12 @@
           <button class="delete" aria-label="delete"></button>
         </div>
         <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+          <strong>Tabogo</strong> es un proyecto que desea analizar la movilidad de los habitantes de la ciudad de Bogotá, basándose en los datos de geolocalización 
+          ofrecidos por Twitter. Usar esta información como fuente adicional a las encuestas, pues los datos de geolocalización 
+          son más fiables.
+          <br/>
+          El proyecto busca Analizar la movilidad de los habitantes y la densidad de personas a determinadas horas del día cuando realizan un <strong>tweet</strong>,
+          de este modo conocer la presencia y comportamientos de ellos en la ciudad. 
         </div>
       </article>
 
@@ -48,11 +53,9 @@
           <button class="delete" aria-label="delete"></button>
         </div>
         <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus qui
-          placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, 
-          et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec 
-          sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, 
-          vehicula et sem eget, facilisis sodales sem.
+          Tweets en Bogotá es una visualización que permite ver la cantidad de tweets generados en un día. 
+          La visualización permite ver la densidad de tweets generados por hora a cualquier hora del día. 
+          También es posible ver otros días de la semana y compararlos con el día activado en curso. 
        
         </div>
       </article>
@@ -72,31 +75,92 @@
         <div class="card-content">
 
           <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-            <a href="#">#css</a> <a href="#">#responsive</a>
+
+            Link de la visualización para ver en pantalla completa: 
+            <a href="https://amvalero10.github.io/VA_Tabogo/index.html" target="_blank" >Tweets en Bogota</a>.
             
             <br>
             <br>
+            <br>
+
 
             <h4>What</h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris. 
+            Datos espacio-temporales de tweets realizados en diciembre del 2014. 
+            Aproximadamente son 26 mil registros por día y más de 183 mil registros de la semana en total.
+            <br>
+            <br>
+
+            <div id="table">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Significado</th>
+                  <th>Tipo</th>
+                  <th>Cardinalidad / Rango</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ID</td>
+                  <td>Id del tweet generado</td>
+                  <td>Nominal</td>
+                  <td>N/A</td>
+                </tr>
+                <tr>
+                  <td>LAT</td>
+                  <td>Latitud del origen del tweet</td>
+                  <td>Ordinal</td>
+                  <td>Coordenadas de Bogotá y cercanias</td>
+                </tr>
+                <tr>
+                  <td>LOT</td>
+                  <td>Longitud del origen del tweet</td>
+                  <td>Ordinal</td>
+                  <td>Coordenadas de Bogotá y cercanias</td>
+                </tr>
+                <tr>
+                  <td>DATE</td>
+                  <td>Fecha de creación del tweet</td>
+                  <td>Ordenada Ordinal</td>
+                  <td> 2014-Dec-[ [1-7] [00:00-24:59] ] </td>
+                </tr>
+                <tr>
+                  <td>TIME</td>
+                  <td>Hora de creación del tweet</td>
+                  <td>Ordenada Ordinal</td>
+                  <td>[0-24]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
 
             <br>
             <br>
 
             <h4>How</h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris. 
-
-
+            Al desplazarse una línea de tiempo que representa las horas del día,  se pueden ver todos los tweets 
+            generados en la hora en curso. Cada punto en el mapa representa un tweet y tiene un efecto de brillo 
+            al crearse sobre el mapa (color aguamarina), luego de pasar su tiempo de creación, el punto tiende a 
+            cambiar de color (morado) estilo mapa de calor, para que en unos segundos se logre ver la diferencia 
+            de posición entre los viejos y nuevos tweets creados.
+            <br>
+            También es posible manipular la línea de tiempo y visualizar diferentes días de la semana, 
+            ocultando y habilitando las capas de los días, se busca que el usuario pueda comparar entre días 
+            la densidad de tweets que se generan entre diferentes horas y días de la semana.
             <br>
             <br>
             
             <h4>Why</h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris. 
+            Se busca entender el funcionamiento y comportamiento de la ciudad a través de la movilidad de sus habitantes. 
+            Este acercamiento permite evidenciar la densidad de tweets que se generan en la ciudad y puede ser clave para 
+            entender como la concentración en el tiempo y distancias pueden ayudar a comprender por qué los tweets son generados 
+            en diferentes cantidades a diferentes horas del día y en diferentes días. 
+            <br>
+            En principio la comparación entre el tiempo de tweets creados(nuevos) y viejos podría 
+            mostrar algún tipo de hallazgo, de igual manera la comparación entre días podría permitir 
+            evidenciar sectores a días y horas específicas donde se pueda ver gran concentración de tweets generados.
 
           </div>
         </div>
