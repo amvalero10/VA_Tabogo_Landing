@@ -123,7 +123,7 @@
                   <td>DATE</td>
                   <td>Fecha de creación del tweet</td>
                   <td>Ordenada Ordinal</td>
-                  <td> 2014-Dec-[ [1-7] [00:00-24:59] ] </td>
+                  <td> 2014-12-[ [1-7] [00:00-24:59] ] </td>
                 </tr>
                 <tr>
                   <td>TIME</td>
@@ -182,11 +182,10 @@
           <button class="delete" aria-label="delete"></button>
         </div>
         <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus qui
-          placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, 
-          et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec 
-          sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, 
-          vehicula et sem eget, facilisis sodales sem.
+          Tweeteros por Bogotá es una visualización que permite ver las rutas de los 5 tweeteros que más se movilizaron 
+          por la ciudad durante un día. Cada tweetero es representado por un color y cada punto representa el tweet generado 
+          a la hora especifica.     <br>
+          Por medio de la línea de tiempo es posible visualizar sus movimientos y posibles rutas  que tomaron para llegar a sus destinos
         </div>
       </article>
       
@@ -202,35 +201,98 @@
         <div class="card-content">
 
           <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-            <a href="#">#css</a> <a href="#">#responsive</a>
+            Link de la visualización para ver en pantalla completa: 
+            <a href="https://amvalero10.github.io/VA_Tabogo_Rutas/" target="_blank" >Tweeteros por Bogotá</a>.
             
+            <br>
             <br>
             <br>
 
             <h4>What</h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris. 
+            Datos espacio-temporales de tweets realizados el 19 de Noviembre del 2014. 
+            Aproximadamente son 26 mil registros por día.
+
+            <br>
+            <br>
+
+            <div id="table">
+              <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Significado</th>
+                    <th>Tipo</th>
+                    <th>Cardinalidad / Rango</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ID</td>
+                    <td>Id del tweet generado</td>
+                    <td>Nominal</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>LAT</td>
+                    <td>Latitud del origen del tweet</td>
+                    <td>Ordinal</td>
+                    <td>Coordenadas de Bogotá y cercanias</td>
+                  </tr>
+                  <tr>
+                    <td>LOT</td>
+                    <td>Longitud del origen del tweet</td>
+                    <td>Ordinal</td>
+                    <td>Coordenadas de Bogotá y cercanias</td>
+                  </tr>
+                  <tr>
+                    <td>DATE</td>
+                    <td>Fecha de creación del tweet</td>
+                    <td>Ordenada Ordinal</td>
+                    <td> 2014-11-19 [00:00-24:59] </td>
+                  </tr>
+                  <tr>
+                    <td>TIME</td>
+                    <td>Hora de creación del tweet</td>
+                    <td>Ordenada Ordinal</td>
+                    <td>[0-24]</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+
 
             <br>
             <br>
 
             <h4>How</h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris. 
+            La visualización muestra los 5 tweeteros que más se desplazan en un día. 
+            Cada color representa un tweetero y cada punto representa un tweet generado. 
+            A través de la línea de tiempo se muestran los tweets generados cada hora por cada tweetero y se generan 
+            nuevas rutas hacia los nuevos puntos creados.<br>
+            La visualización permite ver y deshabilitar diferentes tweeteros para poder concentrarse en alguno especifico.
+
 
 
             <br>
             <br>
             
             <h4>Why</h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris. 
+            Las posibles trayectorias que generan los usuarios, permiten conocer los comportamientos de los usuarios 
+            a diferentes horas del día. La movilidad de los habitantes nos permite también entender sus hábitos y 
+            donde pasan la mayor parte del  tiempo las personas, utilizando su espacio y el espacio público durante el día.
 
           </div>
         </div>
       </div>
+
+      <br>
+      <br>
+      <hr class="solid">
+
+      <br>
+      <br>
       
     <div class="card">
         <div class="card-image">
@@ -270,6 +332,13 @@
           </div>
         </div>
       </div>
+
+      <br>
+      <br>
+      <hr class="solid">
+
+      <br>
+      <br>
   
       <div class="card">
         <div class="card-image">
